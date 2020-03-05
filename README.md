@@ -1,2 +1,2 @@
-# blakely_studio
+# Blakely Studio
  Blakely Studio Website
