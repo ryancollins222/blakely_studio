@@ -14,7 +14,7 @@ i {
   display: none!important;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 650px) { 
   i {
     display: inline-block!important;
   }
