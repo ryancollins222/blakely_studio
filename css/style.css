@@ -1,6 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: white !important;
   padding: 0;
+  opacity: 0.5;
 }
 
 .navbar-toggler:focus {
@@ -10,21 +15,22 @@ a {
 i {
   display: none !important;
 }
-
-nav {
-  background-color: black;
-}
-
-.navbar-inverse,
-.navbar-toggle,
-.icon-bar {
-  color: white !important;
-}
-
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   i {
     display: inline-block !important;
   }
+}
+
+nav {
+  background-color: black;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+section {
+  padding-top: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

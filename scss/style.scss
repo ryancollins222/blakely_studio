@@ -1,30 +1,43 @@
 @import 'variables';
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: $color-white!important;
   padding: 0;
+  opacity: .5;
 }
 
 .navbar-toggler:focus {
   outline: 0;
 }
 
+header {
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
+}
+
 i {
   display: none!important;
+  @media (min-width: 768px) { 
+      display: inline-block!important;
+  }
 }
 
 nav {
   background-color: $color-black;
+  position: fixed!important;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
-.navbar-inverse, 
-.navbar-toggle, 
-.icon-bar {
-  color: $color-white!important;
+section {
+  padding-top: 80px;
 }
 
-@media (min-width: 650px) { 
-  i {
-    display: inline-block!important;
-  }
-}
+
+
