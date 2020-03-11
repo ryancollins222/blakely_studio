@@ -1,0 +1,30 @@
+a {
+  color: white !important;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  outline: 0;
+}
+
+i {
+  display: none !important;
+}
+
+nav {
+  background-color: black;
+}
+
+.navbar-inverse,
+.navbar-toggle,
+.icon-bar {
+  color: white !important;
+}
+
+@media (min-width: 650px) {
+  i {
+    display: inline-block !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
