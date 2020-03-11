@@ -4,26 +4,42 @@
   box-sizing: border-box;
 }
 
-a {
-  color: $color-white!important;
+.artist,
+.about {
+  background-color: $color-black;
+  height: 100vh;
+  color: $color-faded-white;
+}
+
+li a,
+i {
+  color: $color-faded-white!important;
   padding: 0;
-  opacity: .5;
+}
+
+h1 {
+  letter-spacing: .1em;
+  margin: 10px;
 }
 
 .navbar-toggler:focus {
   outline: 0;
 }
 
-header {
-  // position: fixed;
-  // top: 0;
-  // width: 100%;
-}
-
 i {
   display: none!important;
   @media (min-width: 768px) { 
       display: inline-block!important;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+  background-color: $color-primary;
+  width: 100px;
+  height: 100px;
+  &-div {
+    text-align: center;
   }
 }
 
@@ -36,7 +52,7 @@ nav {
 }
 
 section {
-  padding-top: 80px;
+  padding-top: 132px;
 }
 
 

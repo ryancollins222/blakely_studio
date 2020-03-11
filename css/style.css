@@ -2,10 +2,22 @@
   box-sizing: border-box;
 }
 
-a {
-  color: white !important;
+.artist,
+.about {
+  background-color: black;
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+li a,
+i {
+  color: rgba(255, 255, 255, 0.5) !important;
   padding: 0;
-  opacity: 0.5;
+}
+
+h1 {
+  letter-spacing: 0.1em;
+  margin: 10px;
 }
 
 .navbar-toggler:focus {
@@ -21,6 +33,16 @@ i {
   }
 }
 
+.logo {
+  margin: 0 auto;
+  background-color: #0275d8;
+  width: 100px;
+  height: 100px;
+}
+.logo-div {
+  text-align: center;
+}
+
 nav {
   background-color: black;
   position: fixed !important;
@@ -30,7 +52,7 @@ nav {
 }
 
 section {
-  padding-top: 80px;
+  padding-top: 132px;
 }
 
 /*# sourceMappingURL=style.css.map */
