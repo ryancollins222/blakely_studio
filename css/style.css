@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .artist-section,
 .about {
   background-color: black;
@@ -9,8 +16,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-li a,
-i {
+li a {
   color: rgba(255, 255, 255, 0.5) !important;
   padding: 0;
 }
@@ -24,13 +30,15 @@ h1 {
   outline: 0;
 }
 
-i {
-  display: none !important;
+.footer-div {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin: 20px;
 }
-@media (min-width: 768px) {
-  i {
-    display: inline-block !important;
-  }
+
+i {
+  color: black;
 }
 
 .logo {
