@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.artist,
+.artist-section,
 .about {
   background-color: black;
   height: 100vh;
@@ -35,7 +35,6 @@ i {
 
 .logo {
   margin: 0 auto;
-  background-color: #0275d8;
   width: 100px;
   height: 100px;
 }

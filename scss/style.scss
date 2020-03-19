@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.artist,
+.artist-section,
 .about {
   background-color: $color-black;
   height: 100vh;
@@ -35,7 +35,6 @@ i {
 
 .logo {
   margin: 0 auto;
-  background-color: $color-primary;
   width: 100px;
   height: 100px;
   &-div {
