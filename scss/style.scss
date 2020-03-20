@@ -22,9 +22,20 @@ html, body {
   color: $color-white;
 }
 
-li a {
-  color: $color-faded-white!important;
-  padding: 0;
+a {
+  text-align: center;
+  text-decoration: none!important;
+  color: $color-white;
+}
+
+.bars-icon {
+  margin: 20px 0;
+  cursor: pointer;
+  padding: 20px;
+}
+
+li {
+  padding: 5px;
 }
 
 h1 {
@@ -32,8 +43,8 @@ h1 {
   margin-bottom: 30px;
 }
 
-.navbar-toggler:focus {
-  outline: 0;
+h2 {
+  text-align: center;
 }
 
 .footer-div {
@@ -51,23 +62,36 @@ i {
   margin: 0 auto;
   width: 100px;
   height: 100px;
-  &-div {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 nav {
   background-color: $color-black;
   position: fixed!important;
   top: 0;
-  width: 100%;
+  min-width: 100%;
   z-index: 1;
 }
 
+.navlink-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button-col {
+  display: flex;
+  flex-direction: column;
+}
+
 section {
-  padding-top: 200px;
+  padding-top: 175px;
   height: 100vh;
 }
 
-
+ul {
+  list-style: none;
+  padding: 0;
+}
 
