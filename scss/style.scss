@@ -26,6 +26,7 @@ a {
   text-align: center;
   text-decoration: none!important;
   color: $color-white;
+  padding: 5px 5px
 }
 
 .bars-icon {
@@ -34,9 +35,25 @@ a {
   padding: 20px;
 }
 
-li {
-  padding: 5px;
+.color div {
+  margin: 0 10px;
 }
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+  form {
+    padding: 10px 0;
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  background-color: $color-white;
+}
+
+
 
 h1 {
   letter-spacing: .1em;
@@ -45,17 +62,17 @@ h1 {
 
 h2 {
   text-align: center;
-}
-
-.footer-div {
-  display: flex;
-  justify-content: center;
-  background-color: $color-white;
-  margin: 20px 0;
+  margin-bottom: 30px;
 }
 
 i {
   color: $color-black;
+}
+
+
+
+li {
+  padding: 5px;
 }
 
 .logo {

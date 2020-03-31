@@ -62,9 +62,13 @@
             </div>
           </div>
           <div class="row">
-            <div class="col bg-primary">bbh</div>
-            <div class="col bg-warning">sdfaga</div>
-            <div class="col bg-danger">fsgsg</div>
+            <div class="container">
+              <div class="row color">
+                <div class="col bg-primary">bbh</div>
+                <div class="col bg-warning">sdfaga</div>
+                <div class="col bg-danger">fsgsg</div>
+              </div>
+            </div>
           </div>
         </section>
         <section id="studio">
@@ -85,9 +89,17 @@
     </div>
 
     <!-- footer -->
-    <footer>
+    <footer class="row">
+      <!-- email form -->
+      <div class="col-md-6">
+        <form action="">
+          <label for="#email">Subscribe: </label>
+          <input type="email" name="email" id="email" placeholder="name@email.com">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
       <!-- font awesome icons -->
-      <div class="col footer-div">
+      <div class="col-md-6 footer-links">
         <a href="">
           <i class="fab fa-facebook-square fa-2x mx-3"></i>
         </a>  
