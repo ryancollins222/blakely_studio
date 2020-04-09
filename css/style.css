@@ -61,10 +61,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-i {
-  color: black;
-}
-
 li {
   padding: 5px;
 }
@@ -82,6 +78,15 @@ nav {
   top: 0;
   min-width: 100%;
   z-index: 1;
+  overflow: hidden;
+  height: 116px;
+  transition: height 1s;
+}
+nav i {
+  color: black;
+}
+nav.expanded {
+  height: 1000px;
 }
 
 .navlink-div {
@@ -89,6 +94,10 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.navlink-div ul {
+  list-style: none;
+  padding: 0;
 }
 
 .nav-button-col {
@@ -99,11 +108,6 @@ nav {
 section {
   padding-top: 175px;
   height: 100vh;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

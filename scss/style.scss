@@ -53,8 +53,6 @@ footer {
   background-color: $color-white;
 }
 
-
-
 h1 {
   letter-spacing: .1em;
   margin-bottom: 30px;
@@ -65,9 +63,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-i {
-  color: $color-black;
-}
+
 
 
 
@@ -88,6 +84,18 @@ nav {
   top: 0;
   min-width: 100%;
   z-index: 1;
+  overflow: hidden;
+  height: 116px;
+  transition: height 1s;
+  i {
+    color: $color-black;
+  }
+  ul {
+  }
+}
+
+nav.expanded {
+  height: 1000px;
 }
 
 .navlink-div {
@@ -95,6 +103,10 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  ul {
+  list-style: none;
+  padding: 0;
+  }
 }
 
 .nav-button-col {
@@ -107,8 +119,5 @@ section {
   height: 100vh;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+
 

@@ -2,15 +2,16 @@ let navLinkDiv = document.querySelector('.navlink-div');
 let navCollapseIcon= document.querySelector('.bars-icon');
 let navLinks = navLinkDiv.querySelector('ul');
 // make links invisible until menu expanded
-navLinks.style.display = 'none';
+let nav = document.querySelector('nav');
 
-// event listener to show/hide nav links
+// event listener to expand navbar
 navLinkDiv.addEventListener('click', (e) => {
-  if (navLinks.style.display === 'none') {
+  if (!nav.classList.contains('expanded')) {
     navCollapseIcon.style = 'transform: rotate(90deg)';
-    navLinks.style.display = '';
+    // navLinks.style.display = '';
+    nav.classList.toggle('expanded');
   } else {
-    navLinks.style.display = 'none';
     navCollapseIcon.style = '';
+    nav.classList.toggle('expanded');
   }
 })
