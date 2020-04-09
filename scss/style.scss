@@ -13,12 +13,12 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  // scroll-behavior: smooth;
 }
 
 #artists,
 #about {
   background-color: $color-black;
-  height: 100vh;
   color: $color-white;
 }
 
@@ -40,6 +40,9 @@ a {
 }
 
 footer {
+  // position: absolute;
+  // width: 100%;
+  scroll-snap-align: start;
   text-align: center;
   margin: 20px 0;
   form {
@@ -63,19 +66,22 @@ h2 {
   margin-bottom: 30px;
 }
 
-
-
-
+// html {
+//   scroll-snap-type: y mandatory;
+//   height: 100vh;
+//   overflow: scroll;
+// }
 
 li {
   padding: 5px;
 }
 
-.logo {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  text-align: center;
+main {
+  section{
+    scroll-snap-align: start;
+    padding-top: 175px;
+    height: 100vh;
+  }
 }
 
 nav {
@@ -90,12 +96,17 @@ nav {
   i {
     color: $color-black;
   }
-  ul {
+  .logo {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    text-align: center;
   }
 }
 
 nav.expanded {
   height: 1000px;
+  opacity: .9;
 }
 
 .navlink-div {
@@ -114,9 +125,10 @@ nav.expanded {
   flex-direction: column;
 }
 
-section {
-  padding-top: 175px;
+.scroll-container {
+  scroll-snap-type: y mandatory;
   height: 100vh;
+  overflow: scroll;
 }
 
 

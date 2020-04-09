@@ -16,7 +16,6 @@ html, body {
 #artists,
 #about {
   background-color: black;
-  height: 100vh;
   color: white;
 }
 
@@ -38,6 +37,7 @@ a {
 }
 
 footer {
+  scroll-snap-align: start;
   text-align: center;
   margin: 20px 0;
 }
@@ -65,11 +65,10 @@ li {
   padding: 5px;
 }
 
-.logo {
-  margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  text-align: center;
+main section {
+  scroll-snap-align: start;
+  padding-top: 175px;
+  height: 100vh;
 }
 
 nav {
@@ -85,8 +84,16 @@ nav {
 nav i {
   color: black;
 }
+nav .logo {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
 nav.expanded {
   height: 1000px;
+  opacity: 0.9;
 }
 
 .navlink-div {
@@ -105,9 +112,10 @@ nav.expanded {
   flex-direction: column;
 }
 
-section {
-  padding-top: 175px;
+.scroll-container {
+  scroll-snap-type: y mandatory;
   height: 100vh;
+  overflow: scroll;
 }
 
 /*# sourceMappingURL=style.css.map */

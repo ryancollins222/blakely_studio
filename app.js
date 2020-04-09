@@ -15,3 +15,4 @@ navLinkDiv.addEventListener('click', (e) => {
     nav.classList.toggle('expanded');
   }
 })
+
