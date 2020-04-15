@@ -48,6 +48,9 @@ footer {
   form {
     padding: 10px 0;
   }
+  i {
+    color: $color-black;
+  }
 }
 
 .footer-links {
@@ -93,9 +96,7 @@ nav {
   overflow: hidden;
   height: 116px;
   transition: height 1s;
-  i {
-    color: $color-black;
-  }
+  
   .logo {
     margin: 0 auto;
     width: 100px;
