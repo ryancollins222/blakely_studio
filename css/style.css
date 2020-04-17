@@ -32,13 +32,14 @@ a {
   padding: 20px;
 }
 
+.color div {
+  margin: 0 10px;
+}
+
 footer {
   scroll-snap-align: start;
   text-align: center;
   margin: 20px 0;
-}
-footer #email {
-  margin: 0 1rem;
 }
 footer form {
   padding: 10px 0;
@@ -53,15 +54,9 @@ footer i {
   background-color: white;
 }
 
-.contact {
-  width: 60%;
-  margin: 0 auto;
-}
-
 h1 {
   letter-spacing: 0.1em;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 h2 {
@@ -77,9 +72,6 @@ main section {
   scroll-snap-align: start;
   padding-top: 175px;
   height: 100vh;
-}
-main #contact {
-  border-bottom: solid black 1px;
 }
 
 nav {

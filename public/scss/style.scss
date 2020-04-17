@@ -35,9 +35,9 @@ a {
   padding: 20px;
 }
 
-.color div {
-  margin: 0 10px;
-}
+// .color div {
+//   margin: 0 10px;
+// }
 
 footer {
   // position: absolute;
@@ -45,6 +45,9 @@ footer {
   scroll-snap-align: start;
   text-align: center;
   margin: 20px 0;
+  #email {
+    margin: 0 1rem;
+  }
   form {
     padding: 10px 0;
   }
@@ -59,9 +62,15 @@ footer {
   background-color: $color-white;
 }
 
+.contact {
+  width: 60%;
+  margin: 0 auto;
+}
+
 h1 {
   letter-spacing: .1em;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 h2 {
@@ -84,6 +93,9 @@ main {
     scroll-snap-align: start;
     padding-top: 175px;
     height: 100vh;
+  }
+  #contact {
+    border-bottom: solid black 1px;
   }
 }
 

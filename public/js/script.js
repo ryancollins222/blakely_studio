@@ -1,3 +1,4 @@
+// navbar
 let navLinkDiv = document.querySelector('.navlink-div');
 let navCollapseIcon= document.querySelector('.bars-icon');
 let navLinks = navLinkDiv.querySelector('ul');
@@ -14,5 +15,11 @@ navLinkDiv.addEventListener('click', (e) => {
     navCollapseIcon.style = '';
     nav.classList.toggle('expanded');
   }
+})
+
+// contact form
+let contactForm = document.querySelector('main form');
+contactForm.addEventListener('submit', (e) => {
+  alert('test');
 })
 

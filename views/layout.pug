@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+  //- head
+  include includes/head.pug
+
+  body
+    div(class="container-fluid p-0")
+      //- header
+      include includes/header.pug
+      
+      div(class='scroll-container')
+        //- main
+        main
+          block content
+
+        //- footer
+        include includes/footer.pug
+
+    script(src='js/script.js')
+    
