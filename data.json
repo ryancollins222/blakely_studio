@@ -1,0 +1,19 @@
+{
+  "artists": [
+    {
+      "name": "Alexander Munro",
+      "img": "img/munro-pic.jpg",
+      "url": "https://www.alexandermunromusic.com/"
+    },
+    {
+      "name": "Ben Blakely",
+      "img": "img/ben-img.jpg",
+      "url": "https://blakelystudio.com/"
+    },
+    {
+      "name": "Mini Profit",
+      "img": "img/mini-profit-pic.jpeg",
+      "url": "https://blakelystudio.com/"
+    }
+  ]
+}

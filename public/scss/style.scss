@@ -6,6 +6,8 @@
 
 body {
   font-family: futura-pt, sans-serif;
+  background-color: $color-black;
+  color: $color-white;
 }
 
 html, body {
@@ -20,6 +22,30 @@ html, body {
 #about {
   background-color: $color-black;
   color: $color-white;
+  padding-top: 175px;
+  // margin-bottom: 115px;
+  .artist-col {
+    text-align: center;
+    margin: 1rem auto;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    padding: 1rem;
+    // background-color: $color-faded-white;
+    @media (min-width: 992px) { 
+      // width: 90%!important;
+     }
+
+  }
+  .artist-pic {
+    display: block;
+    height: 400px;
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
 }
 
 a {
@@ -29,37 +55,44 @@ a {
   padding: 5px 5px
 }
 
+a:hover {
+  color: inherit;
+}
+
 .bars-icon {
   margin: 20px 0;
   cursor: pointer;
   padding: 20px;
 }
 
-// .color div {
-//   margin: 0 10px;
-// }
+#contact 
+form {
+  opacity: .8;
+}
 
 footer {
-  // position: absolute;
-  // width: 100%;
+  border-top: 1px solid #007bff;
   scroll-snap-align: start;
   text-align: center;
-  margin: 20px 0;
+  // margin: 20px 0;
   #email {
     margin: 0 1rem;
   }
   form {
     padding: 10px 0;
+    opacity: .5;
   }
   i {
-    color: $color-black;
+    color: $color-white;
+    opacity: .5;
   }
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  background-color: $color-white;
+  align-items: center;
+  // background-color: $color-white;
 }
 
 .contact {
@@ -78,11 +111,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-// html {
-//   scroll-snap-type: y mandatory;
-//   height: 100vh;
-//   overflow: scroll;
-// }
 
 li {
   padding: 5px;
@@ -91,11 +119,13 @@ li {
 main {
   section{
     scroll-snap-align: start;
-    padding-top: 175px;
-    height: 100vh;
+    // padding-top: 175px;
+    min-height: 100vh;
+    
   }
   #contact {
     border-bottom: solid black 1px;
+    padding-top: 175px;
   }
 }
 
@@ -108,6 +138,7 @@ nav {
   overflow: hidden;
   height: 116px;
   transition: height 1s;
+  text-align: center;
   
   .logo {
     margin: 0 auto;
@@ -139,10 +170,65 @@ nav.expanded {
 }
 
 .scroll-container {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   height: 100vh;
-  overflow: scroll;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
+
+#studio {
+  .col {
+    margin: 0 auto;
+  }
+  .studio {
+    height: 300px;
+    width: 90%;
+    margin: 1rem auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .studio-1 {
+    background-image: url('../img/studio2.jpg')
+  }
+  .studio-2 {
+    background-image: url('../img/warm1.jpg')
+  }
+  .studio-3 {
+    background-image: url('../img/vocal-rig.jpg')
+  }
+  .studio-4 {
+    background-image: url('../img/uad2.jpg')
+  }
+  .studio-5 {
+    background-image: url('../img/mic.jpg')
+  }
+  .studio-6 {
+    background-image: url('../img/gear1.jpg')
+  }
+  // margin-top: 115px; 
+  // .studio-row {
+  //   // background-color: $color-black;
+  // }
+}
+.studio-img {
+  margin-top: 116px!important;
+  height: 40vh;
+  width: 100%;
+  background-image: url('../img/studio.jpg')!important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @media (min-width: 768px) {
+    background-size: cover;
+  }
+}
+
+// #top {
+//   padding-top: 116px;
+// }
 
 
 

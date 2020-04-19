@@ -4,6 +4,8 @@
 
 body {
   font-family: futura-pt, sans-serif;
+  background-color: black;
+  color: white;
 }
 
 html, body {
@@ -17,6 +19,23 @@ html, body {
 #about {
   background-color: black;
   color: white;
+  padding-top: 175px;
+}
+#artists .artist-col,
+#about .artist-col {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+#artists .artist-pic,
+#about .artist-pic {
+  display: block;
+  height: 400px;
+  width: 80%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 a {
@@ -26,31 +45,41 @@ a {
   padding: 5px 5px;
 }
 
+a:hover {
+  color: inherit;
+}
+
 .bars-icon {
   margin: 20px 0;
   cursor: pointer;
   padding: 20px;
 }
 
+#contact form {
+  opacity: 0.8;
+}
+
 footer {
+  border-top: 1px solid #007bff;
   scroll-snap-align: start;
   text-align: center;
-  margin: 20px 0;
 }
 footer #email {
   margin: 0 1rem;
 }
 footer form {
   padding: 10px 0;
+  opacity: 0.5;
 }
 footer i {
-  color: black;
+  color: white;
+  opacity: 0.5;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  background-color: white;
+  align-items: center;
 }
 
 .contact {
@@ -75,11 +104,11 @@ li {
 
 main section {
   scroll-snap-align: start;
-  padding-top: 175px;
-  height: 100vh;
+  min-height: 100vh;
 }
 main #contact {
   border-bottom: solid black 1px;
+  padding-top: 175px;
 }
 
 nav {
@@ -91,6 +120,7 @@ nav {
   overflow: hidden;
   height: 116px;
   transition: height 1s;
+  text-align: center;
 }
 nav .logo {
   margin: 0 auto;
@@ -121,9 +151,57 @@ nav.expanded {
 }
 
 .scroll-container {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   height: 100vh;
-  overflow: scroll;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#studio .col {
+  margin: 0 auto;
+}
+#studio .studio {
+  height: 300px;
+  width: 90%;
+  margin: 1rem auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#studio .studio-1 {
+  background-image: url("../img/studio2.jpg");
+}
+#studio .studio-2 {
+  background-image: url("../img/warm1.jpg");
+}
+#studio .studio-3 {
+  background-image: url("../img/vocal-rig.jpg");
+}
+#studio .studio-4 {
+  background-image: url("../img/uad2.jpg");
+}
+#studio .studio-5 {
+  background-image: url("../img/mic.jpg");
+}
+#studio .studio-6 {
+  background-image: url("../img/gear1.jpg");
+}
+
+.studio-img {
+  margin-top: 116px !important;
+  height: 40vh;
+  width: 100%;
+  background-image: url("../img/studio.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@media (min-width: 768px) {
+  .studio-img {
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
