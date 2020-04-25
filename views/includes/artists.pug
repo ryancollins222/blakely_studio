@@ -1,12 +1,18 @@
 section#artists
   .row
-    .col
+    .col-12
       h1 Blakely Studio
-      h2 Artists
+      h2 
+        em Artists
+    .col-12
+      .line  
+
   .row
     each artist in artists
       .col.col-9.col-lg-4.artist-col
         .artist-container
           a(href= artist.url)
             h3= artist.name
+            .line
             .artist-pic(style=`background-image:url(${artist.img});`)
+            .line
