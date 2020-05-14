@@ -15,5 +15,28 @@
       "img": "img/mini-profit-pic.jpeg",
       "url": "https://blakelystudio.com/"
     }
+  ],
+
+  "studioPhotos": [
+    {
+    "url": "/img/studio2.jpg"
+    },
+    {
+    "url": "/img/mic.jpg"
+    },
+    {
+    "url": "/img/gear1.jpg"
+    },
+    {
+    "url": "/img/vocal-rig.jpg"
+    },
+    {
+    "url": "/img/warm1.jpg"
+    },
+    {
+    "url": "/img/uad2.jpg"
+    }
   ]
-}
+
+}  
+

@@ -147,7 +147,7 @@ nav .logo {
 }
 
 nav.expanded {
-  height: 1000px;
+  height: 100vh;
   opacity: 0.9;
 }
 
@@ -168,6 +168,7 @@ nav.expanded {
 }
 
 .scroll-container {
+  scroll-snap-type: y proximity;
   height: 100vh;
   width: 100%;
   overflow-y: scroll;
@@ -186,29 +187,14 @@ nav.expanded {
   background-repeat: no-repeat;
 }
 #studio .studio-1 {
-  background-image: url("../img/studio2.jpg");
-}
-#studio .studio-2 {
-  background-image: url("../img/warm1.jpg");
-}
-#studio .studio-3 {
-  background-image: url("../img/vocal-rig.jpg");
-}
-#studio .studio-4 {
-  background-image: url("../img/uad2.jpg");
-}
-#studio .studio-5 {
-  background-image: url("../img/mic.jpg");
-}
-#studio .studio-6 {
-  background-image: url("../img/gear1.jpg");
+  background-image: url("/img/studio2.jpg");
 }
 
 .studio-img {
   margin-top: 116px !important;
   height: 40vh;
   width: 100%;
-  background-image: url("../img/studio.jpg") !important;
+  background-image: url("/img/studio.jpg") !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -218,6 +204,10 @@ nav.expanded {
   .studio-img {
     background-size: cover;
   }
+}
+
+.turn90 {
+  transform: rotate(90deg);
 }
 
 /*# sourceMappingURL=style.css.map */

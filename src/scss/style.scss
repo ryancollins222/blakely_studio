@@ -168,7 +168,7 @@ nav {
 }
 
 nav.expanded {
-  height: 1000px;
+  height: 100vh;
   opacity: .9;
 }
 
@@ -189,7 +189,7 @@ nav.expanded {
 }
 
 .scroll-container {
-  // scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   height: 100vh;
   width: 100%;
   overflow-y: scroll;
@@ -209,23 +209,23 @@ nav.expanded {
     background-repeat: no-repeat;
   }
   .studio-1 {
-    background-image: url('../img/studio2.jpg')
+    background-image: url('/img/studio2.jpg')
   }
-  .studio-2 {
-    background-image: url('../img/warm1.jpg')
-  }
-  .studio-3 {
-    background-image: url('../img/vocal-rig.jpg')
-  }
-  .studio-4 {
-    background-image: url('../img/uad2.jpg')
-  }
-  .studio-5 {
-    background-image: url('../img/mic.jpg')
-  }
-  .studio-6 {
-    background-image: url('../img/gear1.jpg')
-  }
+  // .studio-2 {
+  //   background-image: url('../img/warm1.jpg')
+  // }
+  // .studio-3 {
+  //   background-image: url('../img/vocal-rig.jpg')
+  // }
+  // .studio-4 {
+  //   background-image: url('../img/uad2.jpg')
+  // }
+  // .studio-5 {
+  //   background-image: url('../img/mic.jpg')
+  // }
+  // .studio-6 {
+  //   background-image: url('../img/gear1.jpg')
+  // }
   // margin-top: 115px; 
   // .studio-row {
   //   // background-color: $color-black;
@@ -235,7 +235,7 @@ nav.expanded {
   margin-top: 116px!important;
   height: 40vh;
   width: 100%;
-  background-image: url('../img/studio.jpg')!important;
+  background-image: url('/img/studio.jpg')!important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -245,9 +245,9 @@ nav.expanded {
   }
 }
 
-// #top {
-//   padding-top: 116px;
-// }
+.turn90 {
+  transform: rotate(90deg);
+}
 
 
 
